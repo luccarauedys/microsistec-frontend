@@ -1,11 +1,14 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+import { useRouter } from "vue-router";
 import LogoMicrosistec from "@/assets/images/logo-microsistec.png";
+
+const router = useRouter();
 </script>
 
 <template>
   <header>
-    <img :src="LogoMicrosistec" />
+    <img :src="LogoMicrosistec" @click="router.push('/')" />
     <nav>
       <RouterLink to="/">Início</RouterLink>
       <RouterLink to="/clientes">Clientes</RouterLink>

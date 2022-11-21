@@ -1,8 +1,12 @@
-<script setup></script>
+<script setup>
+import CreateClients from "@/components/CreateClients.vue";
+import SearchClients from "@/components/SearchClients.vue";
+</script>
 
 <template>
   <main>
-    <h1>Clientes</h1>
+    <CreateClients />
+    <SearchClients />
   </main>
 </template>
 
